@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/textevent"
+        android:maxLength="23"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="23sp" />
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/search"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/search_action"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignBottom="@id/searchText"
+        android:layout_marginTop="8dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchButton"
+        android:scrollbars="vertical"/>
+</RelativeLayout>

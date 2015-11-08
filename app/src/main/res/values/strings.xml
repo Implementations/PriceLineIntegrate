@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PricelineHack</string>
+    <string name="texthint">Search Place</string>
+    <string name="textevent">Search Band</string>
+    <string name="rooms">Rooms:</string>
+    <string name="event">Event Location:</string>
+    <string name="artist">Artists:</string>
+    <string name="date">Date:</string>
+    <string name="maxPrice">Max price</string>
+    <string name="minPrice">Min price</string>
+    <string name="rating">Rating:</string>
+    <string name="checkin">Checkin</string>
+    <string name="checkout">Checkout</string>
+    <string name="search">Search</string>
+    <string name="ticket">Tickets</string>
+    <string name="hotel">Hotel</string>
+    <string-array name="room_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="up">^</string>
+    <string name="down">v</string>
+    <string name="prev">&lt;</string>
+    <string name="next">&gt;</string>
+    <string name="outof5">/5</string>
+    <string name="progress">Loading...</string>
+    <string name="error">Error in fetching data...</string>
+</resources>

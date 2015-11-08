@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_alignParentStart="true"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginEnd="@dimen/image_margin"
+        android:contentDescription="@null" />
+
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/hotel_image"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotel_name"
+        android:layout_toEndOf="@id/hotel_image"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:layout_toEndOf="@id/rating"
+        android:layout_below="@id/hotel_name"
+        android:text="@string/outof5"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/minPrice"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/hotel_name"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"/>
+
+    <View android:background="@android:color/darker_gray"
+        android:layout_below="@id/hotel_image"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"/>
+
+</RelativeLayout>

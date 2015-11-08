@@ -1,0 +1,112 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/texthint"
+        android:maxLength="23"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkin"
+        android:hint="@string/checkin"
+        android:textColor="@color/colorWhite"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@id/searchText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkout"
+        android:maxLength="8"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorWhite"
+        android:hint="@string/checkout"
+        android:inputType="number"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@id/searchText"/>
+
+    <TextView
+        android:id="@+id/roomDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkin"
+        android:textColor="@android:color/darker_gray"
+        android:paddingTop="2dp"
+        android:text="@string/rooms" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/room"
+        android:layout_below="@id/roomDesc"/>
+
+    <TextView
+        android:id="@+id/ratingDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkin"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentRight="true"
+        android:paddingTop="2dp"
+        android:paddingRight="3dp"
+        android:text="@string/rating" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingDesc"
+        android:layout_alignParentRight="true"
+        android:stepSize="0.5"
+        android:max="5"
+        android:paddingLeft="3dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minPrice"
+        android:hint="@string/minPrice"
+        android:textColor="@color/colorWhite"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingTop="4dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@id/rating"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxPrice"
+        android:maxLength="5"
+        android:textColor="@color/colorWhite"
+        android:hint="@string/maxPrice"
+        android:inputType="number"
+        android:paddingTop="4dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rating"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minPrice"
+        android:text="@string/search"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

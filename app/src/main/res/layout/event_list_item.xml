@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/event_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/event"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark" />
+    <TextView
+        android:id="@+id/event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_desc"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/artist_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_location"
+        android:textSize="18sp"
+        android:text="@string/artist"
+        android:textColor="@android:color/background_dark" />
+    <TextView
+        android:id="@+id/artists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist_desc"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/date_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artists"
+        android:textSize="18sp"
+        android:text="@string/date"
+        android:textColor="@android:color/background_dark" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_desc"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ticket"
+        android:background="@color/colorRed"
+        android:textColor="@android:color/background_dark"
+        android:paddingTop="4dp"
+        android:id="@+id/ticket"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/date"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotel"
+        android:textColor="@android:color/background_dark"
+        android:background="@color/colorAccent"
+        android:paddingTop="4dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/hotel"
+        android:layout_toEndOf="@id/ticket"
+        android:layout_below="@id/date"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/acdc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/hotel"/>
+
+    <View android:background="@android:color/darker_gray"
+        android:layout_below="@id/ticket"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"/>
+
+</RelativeLayout>
