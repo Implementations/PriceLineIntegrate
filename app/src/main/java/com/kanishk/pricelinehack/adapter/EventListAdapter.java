@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.kanishk.pricelinehack.Constant;
@@ -43,8 +44,8 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
         vh.mTextEvent = (TextView) v.findViewById(R.id.event_location);
         vh.mTextArtist = (TextView) v.findViewById(R.id.artists);
         vh.mTextDate = (TextView) v.findViewById(R.id.date);
-        vh.mTicket = (Button) v.findViewById(R.id.ticket);
-        vh.mHotel = (Button) v.findViewById(R.id.hotel);
+        vh.mTicket = (ImageButton) v.findViewById(R.id.ticket);
+        vh.mHotel = (ImageButton) v.findViewById(R.id.hotel);
         return vh;
     }
 
@@ -100,8 +101,8 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
         TextView mTextEvent;
         TextView mTextDate;
         TextView mTextArtist;
-        Button mTicket;
-        Button mHotel;
+        ImageButton mTicket;
+        ImageButton mHotel;
         public EventViewHolder(View itemView) {
            super(itemView);
         }
